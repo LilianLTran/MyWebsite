@@ -1,6 +1,6 @@
 export default function HobbiesPage() {
   return (
-    <div className="px-6 py-12 lg:px-10">
+    <div>
       {/* Header */}
       <section className="pt-10">
         <div className="grid gap-6 md:grid-cols-[300px_minmax(0,1fr)] 

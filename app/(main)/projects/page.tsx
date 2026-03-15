@@ -4,7 +4,7 @@ import { withBasePath } from "@/lib/path";
 
 export default function ProjectsPage() {
   return (
-    <div className="px-6 py-12 lg:px-10">
+    <div>
       <section>
         <h1 className="text-4xl font-semibold tracking-tight">Projects</h1>
         <p className="mt-3 max-w-2xl text-neutral-600 dark:text-neutral-300">

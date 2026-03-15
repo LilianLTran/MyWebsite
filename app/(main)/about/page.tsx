@@ -1,10 +1,10 @@
 export default function AboutPage() {
   return (
-    <div className="px-6 py-12 lg:px-10">
+    <>
       <h1 className="text-4xl font-semibold tracking-tight">About Me</h1>
 
-      <div className="mt-6 max-w-3xl space-y-6 text-neutral-600 
-        dark:text-neutral-300 text-justify">
+      <div className="mt-6 space-y-6 text-neutral-600 dark:text-neutral-300 
+        text-justify">
         <p>
           A software engineer drawn to challenging problems involving 
           logic, mathematics, and algorithms. I approach programming like a 
@@ -25,6 +25,6 @@ export default function AboutPage() {
           the journey.
         </p>
       </div>
-    </div>
+    </>
   );
 }

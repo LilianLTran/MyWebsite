@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <>
       {/* Right section */}
-      <div className="px-6 py-12 lg:px-10">
+      <div>
         <h1 className="text-4xl font-semibold">
           Hi, I'm {profile.name}
         </h1>
@@ -41,7 +41,7 @@ export default function HomePage() {
       </div>
         
       {/* Projects Section */}
-      <div className="px-6 py-12 lg:px-10">
+      <div className="py-12">
         <h2 className="text-2xl font-semibold mb-6">
           Featured Projects
         </h2>

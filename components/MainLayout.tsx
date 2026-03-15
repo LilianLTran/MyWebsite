@@ -14,7 +14,8 @@ type MainLayoutProps = {
 };
 
 export default function MainLayout({ children }: MainLayoutProps) {
-  const [isDark, setIsDark] = useState(getIsNight);
+  const [mounted, setMounted] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     const updateThemeByTime = () => {
@@ -22,10 +23,14 @@ export default function MainLayout({ children }: MainLayoutProps) {
     };
 
     updateThemeByTime();
+    setMounted(true);
+
     const interval = setInterval(updateThemeByTime, 60 * 1000);
 
     return () => clearInterval(interval);
   }, []);
+
+  if (!mounted) return null;
 
   return (
     <main className="min-h-screen">
@@ -39,7 +44,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
         >
           <Navbar isDark={isDark} />
 
-          <div className="px-6 py-12 lg:px-10">{children}</div>
+          <div className="px-6 py-12 lg:px-20 lg:pt-24">{children}</div>
         </section>
       </div>
     </main>
