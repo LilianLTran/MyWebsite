@@ -23,15 +23,18 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-4 lg:px-10">
         <nav className="flex items-center gap-6 text-sm font-medium">
           {navItems.map((item) => {
-            const isActive = pathname == item.path || pathname.startsWith(item.path + "/");
+            const isActive = pathname == item.path || 
+              pathname.startsWith(item.path + "/");
             return (
               <Link
                 key={item.path}
                 href={item.path}
-                className={`group relative pb-1 transition text-neutral-600 hover:text-neutral-800 dark:hover:text-white
-                ${isActive ? (
-                  "text-neutral-950 dark:text-white"
-                ) : ""}`}
+                className={`group relative pb-1 transition text-neutral-600 
+                  hover:text-neutral-800 dark:hover:text-white
+                  ${isActive ? (
+                    "text-neutral-950 dark:text-white"
+                  ) : ""}`
+                }
               >
                 {item.name}
                 <span
