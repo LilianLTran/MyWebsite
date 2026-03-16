@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                           key={t.name}
                           src={t.badge}
                           alt={t.name}
-                          className="h-6 transition-transform hover:scale-105"
+                          className="h-6 transition-transform hover:scale-105 ml-2"
                         />
                       ))}
                     </div>
