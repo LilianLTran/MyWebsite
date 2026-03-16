@@ -33,7 +33,7 @@ export default function ProjectsPage() {
                       src={withBasePath(project.image)}
                       alt={project.title}
                       fill
-                      className="object-contain"
+                      className="object-contain pl-4"
                     />
                   )}
                 </div>
@@ -51,13 +51,13 @@ export default function ProjectsPage() {
                       </p>
                     </div>
 
-                    <div className="mt-5 flex flex-wrap gap-2">
+                    <div className="mt-5 flex flex-wrap gap-2 px-4">
                       {project.tech.map((t) => (
                         <img
                           key={t.name}
                           src={t.badge}
                           alt={t.name}
-                          className="h-6 transition-transform hover:scale-105 ml-2"
+                          className="h-6 transition-transform hover:scale-105"
                         />
                       ))}
                     </div>
