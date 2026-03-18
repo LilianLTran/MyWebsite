@@ -1,4 +1,4 @@
-export const basePath = "/MyWebsite";
+export const basePath = "";
 
 export function withBasePath(path: string) {
   return `${basePath}${path}`;
